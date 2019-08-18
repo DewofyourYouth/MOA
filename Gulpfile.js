@@ -2,11 +2,11 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const njr = require('gulp-nunjucks-render');
-const ghPages = require('gulp-gh-pages');
+// const ghPages = require('gulp-gh-pages');
 // const data = require('gulp-data');
 
 
-gulp.task('deploy', () => gulp.src('./dist/**/*').pipe(ghPages()));
+// gulp.task('deploy', () => gulp.src('./dist/**/*').pipe(ghPages()));
 
  function nunjucks(){
     // where the nunjucks files to convert to html are 
