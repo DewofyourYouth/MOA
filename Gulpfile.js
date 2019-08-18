@@ -17,7 +17,7 @@ const njr = require('gulp-nunjucks-render');
         path: ['app/src/templates']
     }))
     // where to send the converted njk files => html files
-    .pipe(gulp.dest('app/dist/'))
+    .pipe(gulp.dest('dist/'))
 }
 
 function style() {
@@ -26,7 +26,7 @@ function style() {
     // 2. pass that file through sass compiler (to change to minified change outputStyle to compressed)
     .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
     // 3. where to save compiled css?
-    .pipe(gulp.dest('app/dist'))
+    .pipe(gulp.dest('dist'))
     // 4. stream changes to all browsers
     .pipe(browserSync.stream());
 }
@@ -36,7 +36,7 @@ function watch() {
     browserSync.init({
         server: {
             // 2. Identify where the root directory of the server is
-            baseDir: 'app/dist'
+            baseDir: 'dist'
         }
     });
 
@@ -46,8 +46,8 @@ function watch() {
     gulp.watch('app/src/pages/**/*.njk', nunjucks);
     gulp.watch('app/src/templates/**/*.njk', nunjucks);
     gulp.watch('app/src/scss/**/*.scss', style);
-    gulp.watch('app/dist/*.html').on('change', browserSync.reload);
-    gulp.watch('app/dist/js/**/*.js').on('change', browserSync.reload)
+    gulp.watch('dist/*.html').on('change', browserSync.reload);
+    gulp.watch('dist/js/**/*.js').on('change', browserSync.reload)
 }
 
 // these make the functions accessable from the command line by writing gulp and then the value.
