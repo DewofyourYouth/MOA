@@ -1,0 +1,67 @@
+
+
+/*
+    Carousel Styles
+*/
+#slide1 {
+    background: linear-gradient(to right,#0000007e 30%, #ffffff00), url(assets/images/yoga.jpg)center bottom;
+    background-size: cover;
+}
+
+#slide2 {
+    background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(assets/images/runner.jpg);
+    background-size: cover;
+}
+
+#slide3 {
+    background: linear-gradient(to right,#0000007e 30%, #ffffff00), url(assets/images/boxing.jpg);
+    background-size: cover;
+}
+
+.welcome-sldr {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.slide {
+    min-width: 100%;
+    height: 800px;
+    margin: auto;
+
+
+    .wrapper {
+        display: table;
+        width: 100%;
+        height: 100%;
+  
+
+        .slide-content {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: left;
+            padding: 0 100px;
+            padding-left: 200px;
+            color: white;
+
+            .sldr-title {
+                font-size: 9rem;
+                font-weight: bolder;
+                font-family: $barlow-blk;
+                letter-spacing: 3px;
+            }
+
+            .continue-text {
+                font-size: 1.7rem;
+                margin-left: 150px;
+                font-weight: 600;
+                font-family: $roboto;
+                text-transform: uppercase;
+                padding: 15px 0 40px 0;
+            }
+        }
+    }
+   
+
+}
+
+

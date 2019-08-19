@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+@font-face {
+  font-family: barlow_black;
+  src: local(barlow_black), url("assets/fonts/BarlowCondensed-Black.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: barlow;
+  src: local(barlow_black), url("assets/fonts/BarlowCondensed-Medium.ttf") format("opentype");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#intro {
+  min-height: 500px;
+  background: linear-gradient(to bottom, #05050562, #fffdfd41), url(/assets/images/dumbbells.jpg) fixed right center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+#intro h1 {
+  margin-top: 150px;
+}
+
+.button-lg {
+  padding: 21px 50px;
+  font-size: 18px;
+  font-size: 2rem;
+}
+
+.lg-cta {
+  --x: 81px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border-color: transparent;
+  background-size: 200% auto;
+  background-position: 100% 50%;
+  background-image: linear-gradient(84deg, #f6435f 0%, #ff9625 50%, #f6435f 100%);
+  animation: motionGradient 5s infinite linear;
+  color: #fff;
+}
+
+.lg-cta:hover {
+  background-position: var(--x) 50%;
+  border-color: transparent;
+  transition: none;
+  animation: none;
+}
+
+.sec-title {
+  font-family: barlow, "Roboto", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.sec-subtext {
+  font-size: 2rem;
+  margin-bottom: 80px;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.scrolled {
+  background-color: #fff !important;
+}
+
+.scrolled .nav-link {
+  color: black !important;
+}
+
+.scrolled .navbar-brand img {
+  filter: none;
+  -webkit-filter: none;
+}
+
+.scrolled .cta-btn {
+  border: solid 2px #f6435f;
+  color: black;
+}
+
+.scrolled .cta-btn:hover {
+  border: solid 2px #f6435f;
+  color: white;
+  background-color: #f6435f;
+}
+
+.navbar-brand img {
+  max-width: 220px;
+  margin-left: 30px;
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+.nav-item {
+  padding: 10px 20px;
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition-duration: 300ms;
+}
+
+.nav-link:hover {
+  color: #f6435f !important;
+  transition-duration: 300ms;
+}
+
+.nav-btn {
+  justify-content: flex-end !important;
+}
+
+.cta-btn {
+  border: solid 2px white;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  transition-duration: 500ms;
+}
+
+.cta-btn:hover {
+  border: solid 2px white;
+  background-color: #fff;
+  color: #f6435f;
+  transition-duration: 500ms;
+}
+
+/*
+    Carousel Styles
+*/
+#slide1 {
+  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(assets/images/yoga.jpg) center bottom;
+  background-size: cover;
+}
+
+#slide2 {
+  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(assets/images/runner.jpg);
+  background-size: cover;
+}
+
+#slide3 {
+  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(assets/images/boxing.jpg);
+  background-size: cover;
+}
+
+.welcome-sldr {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.slide {
+  min-width: 100%;
+  height: 800px;
+  margin: auto;
+}
+
+.slide .wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.slide .wrapper .slide-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding: 0 100px;
+  padding-left: 200px;
+  color: white;
+}
+
+.slide .wrapper .slide-content .sldr-title {
+  font-size: 9rem;
+  font-weight: bolder;
+  font-family: barlow_black, "Roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+.slide .wrapper .slide-content .continue-text {
+  font-size: 1.7rem;
+  margin-left: 150px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding: 15px 0 40px 0;
+}
+
+#main-services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.service-row {
+  display: flex;
+  font-family: barlow, "Roboto", sans-serif;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0 150px;
+}
+
+.service-row .service {
+  display: flex;
+  border: solid 1px #cecece;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.service-row .service h2 {
+  margin: auto;
+  font-size: 3rem;
+}
+
+.service-row .icon i {
+  padding-left: 20px;
+  font-size: 7rem;
+  background-image: -webkit-linear-gradient(right, #f6435f, #ff9625);
+  /* For Chrome and Safari */
+  background-image: -moz-linear-gradient(right, #f6435f, #ff9625);
+  /* For old Fx (3.6 to 15) */
+  background-image: -ms-linear-gradient(right, #f6435f, #ff9625);
+  /* For pre-releases of IE 10*/
+  background-image: -o-linear-gradient(right, #f6435f, #ff9625);
+  /* For old Opera (11.1 to 12.0) */
+  background-image: linear-gradient(to right, #f6435f, #ff9625);
+  /* Standard syntax; must be last */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#patients {
+  margin: 40px;
+}
+
+#patients .text {
+  box-shadow: 0px 0px 3px 1px #ccc;
+  border-radius: 10px 10px 0 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 80px;
+  padding-bottom: 10px !important;
+}
+
+#patients .title-sec {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#patients .title-sec h4 {
+  font-weight: bold;
+}
+
+#patients .title-sec h6 {
+  font-weight: 600;
+}
+
+#patients .title-sec p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+#patients hr {
+  margin: 20px 30px;
+}
+
+#patients .features-sec ul {
+  text-align: left;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+}
+
+#patients .features-sec li:before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  margin: 0 5px 15px 15px;
+  padding-right: 10px;
+}
+
+#patients .features-sec li {
+  list-style: none;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+#patients .btn-sec {
+  margin-top: 0px !important;
+}
+
+#patients .btn-sec a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  border-radius: 0 0 10px 10px !important;
+  text-transform: uppercase;
+}
+
+#online-payments {
+  padding: 100px 80px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to bottom, #000000e1, #000000b7), url(assets/images/dumbbells.jpg) fixed;
+  background-size: cover;
+}

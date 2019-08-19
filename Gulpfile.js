@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const njr = require('gulp-nunjucks-render');
-// const ghPages = require('gulp-gh-pages');
 // const data = require('gulp-data');
 
 
@@ -21,7 +20,7 @@ const njr = require('gulp-nunjucks-render');
         path: ['app/src/templates']
     }))
     // where to send the converted njk files => html files
-    .pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('./dist/'))
 }
 
 function style() {

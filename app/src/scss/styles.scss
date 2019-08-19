@@ -1,1 +1,63 @@
+@import 'vars';
+
+
+body {
+    font-family: $roboto;
+}
+
+#intro {
+    min-height: 500px;
+    background: linear-gradient(to bottom, #05050562, #fffdfd41),
+      url(/assets/images/dumbbells.jpg) fixed right center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+  
+    h1 {
+      margin-top: 150px;
+    }
+
+}
+
+.button-lg {
+    padding: 21px 50px;
+    font-size: 18px;
+    font-size: 2rem;
+}
+
+.lg-cta {
+    --x: 81px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border-color: transparent;
+    background-size: 200% auto;
+    background-position: 100% 50%;
+    background-image: linear-gradient(84deg, $site-red 0%,$site-yellow 50%,$site-red 100%);
+    animation: motionGradient 5s infinite linear;
+    color: #fff;
+
+    &:hover {
+        background-position: var(--x) 50%;
+        border-color: transparent;
+        transition: none;
+        animation: none;
+    }
+}
+
+.sec-title {
+    font-family: $barlow;
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+.sec-subtext {
+    font-size: 2rem;
+    margin-bottom: 80px;
+
+}
 @import 'elements/nav';
+@import 'elements/home/welcome';
+@import 'elements/home/main_services';
+@import 'elements/patients';
+@import 'elements/home/online_payments';
+@import 'elements/home/testimonials';

@@ -1,0 +1,48 @@
+#main-services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  
+}  
+
+.service-row {
+    display: flex;
+    font-family: $barlow;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 150px;
+    .service {
+        display: flex;
+        border: solid 1px #cecece;
+        justify-content: center;
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        padding: 40px 20px;
+
+        h2 {
+            margin: auto;
+            font-size: 3rem;
+        }
+    }
+
+    .icon {
+        i {
+        padding-left: 20px;
+        font-size: 7rem;
+        background-image: -webkit-linear-gradient(right, $site-red, $site-yellow); /* For Chrome and Safari */
+        background-image:    -moz-linear-gradient(right, $site-red, $site-yellow); /* For old Fx (3.6 to 15) */
+        background-image:     -ms-linear-gradient(right, $site-red, $site-yellow); /* For pre-releases of IE 10*/
+        background-image:      -o-linear-gradient(right, $site-red, $site-yellow); /* For old Opera (11.1 to 12.0) */
+        background-image:         linear-gradient(to right, $site-red, $site-yellow); /* Standard syntax; must be last */
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        }
+    }
+}
+
+

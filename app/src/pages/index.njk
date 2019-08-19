@@ -1,8 +1,128 @@
+{% set page_name = 'Home ' %}
 {% extends "layout.njk" %}
-{% block mainContent %}
-<div class="row">
-    <div class="col-12 text-center">
-     <h1 class="display-1">How are you?</h1>
+{% block content %}
+
+    <!-- The "welcome" carousel -->
+
+    <section id="welcome" class="row">
+        <div class="welcome-sldr col-12">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="slide1" class="slide">
+                            <div class="wrapper">
+                                <div class="slide-content">
+                                    <h1 class="sldr-title">Overcome</h1>
+                                    <p class="continue-text">
+                                        This that<br>
+                                        and the other<br>
+                                        thing.
+                                    </p>
+                                    <a href="#" class="btn btn-outline-primary lg-cta button-lg">Button Here</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="slide2" class="slide">
+                            <div class="wrapper">
+                                <div class="slide-content">
+                                    <h1 class="sldr-title">Challenge</h1>
+
+                                    <p class="continue-text">
+                                        This that<br>
+                                        and the other<br>
+                                        thing.
+                                    </p>
+                                    <a href="#" class="btn btn-outline-primary lg-cta button-lg">Button Here</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="slide3" class="slide">
+                            <div class="wrapper">
+                                <div class="slide-content">
+                                    <h1 class="sldr-title">Inspire</h1>
+                                    <p class="continue-text">
+                                        This that<br>
+                                        and the other<br>
+                                        thing.
+                                    </p>
+                                    <a href="#" class="btn btn-outline-primary lg-cta button-lg">Button Here</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-{% endblock mainContent %}
+</section>
+<section id="main-services" class="row">
+<div class="col-12">
+    <div id="service-area">
+        <div class="service-row">
+            <div class="service">
+                <div class="icon">
+                    <i class="fas fa-atlas"></i>
+                </div>
+                <h2>Service Here</h2>
+            </div>
+            <div class="service">
+                <div class="icon">
+                    <i class="fas fa-air-freshener"></i>
+
+                </div>
+                <h2>Service Here</h2>
+            </div>
+            <div class="service">
+                <div class="icon">
+                    <i class="fas fa-bong"></i>
+                </div>
+                <h2>Service Here</h2>
+            </div>
+        </div>
+        <div class="service-row">
+            <div class="service">
+                <div class="icon">
+                    <i class="far fa-bell"></i>
+                </div>
+                <h2>Service Here</h2>
+            </div>
+            <div class="service">
+                <div class="icon">
+                    <i class="fas fa-balance-scale-right"></i>
+                </div>
+                <h2>Service Here</h2>
+            </div>
+            <div class="service">
+                <div class="icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h2>Service Here</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="online-payments" class="row">
+    <div class="col-12">
+        <h1 class="sec-title">Exercitation incididunt exercitation ut cillum.</h1>
+        <p class="sec-subtext">
+            Ad amet anim minim veniam anim et velit consectetur esse dolore aliquip. Esse ullamco incididunt tempor fugiat ipsum eu exercitation voluptate deserunt labore.
+        </p>
+                    <a href="#" class="btn btn-outline-primary lg-cta button-lg">Button Here</a>
+
+
+    </div>
+</section>
+<section id="testimonials" class="row"></section>
+<section id="home-about" class="row"></section>
+<section id="newsletter" class="row"></section>
+{% endblock content %}
