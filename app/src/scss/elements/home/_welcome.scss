@@ -38,7 +38,9 @@
             vertical-align: middle;
             text-align: left;
             padding: 0 100px;
+            @media #{$laptop-plus} {
             padding-left: 200px;
+            }
             color: white;
 
             .sldr-title {

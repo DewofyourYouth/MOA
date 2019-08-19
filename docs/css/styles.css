@@ -26,10 +26,15 @@ body {
 }
 
 .button-lg {
-  padding: 21px 50px;
   font-size: 18px;
   font-size: 2rem;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 1439px) {
+  .button-lg {
+    padding: 21px 50px;
+  }
 }
 
 .lg-cta {
@@ -181,8 +186,13 @@ body {
   vertical-align: middle;
   text-align: left;
   padding: 0 100px;
-  padding-left: 200px;
   color: white;
+}
+
+@media only screen and (min-width: 1439px) {
+  .slide .wrapper .slide-content {
+    padding-left: 200px;
+  }
 }
 
 .slide .wrapper .slide-content .sldr-title {
