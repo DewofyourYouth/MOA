@@ -233,7 +233,7 @@ body {
 
 .service-row .icon i {
   padding-left: 20px;
-  font-size: 7rem;
+  font-size: 5rem;
   background-image: -webkit-linear-gradient(right, #f6435f, #ff9625);
   /* For Chrome and Safari */
   background-image: -moz-linear-gradient(right, #f6435f, #ff9625);
