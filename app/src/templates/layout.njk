@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Bootstrap -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Owl Carousel -->
@@ -14,22 +15,30 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+
     <!-- My stylesheet -->
+
     <link rel="stylesheet" href="css/styles.css">
 
     <title>MOA / SCBS -
       {{page_name}}</title>
   </head>
   <body>
-    <!-- Navbar Header (fixed) included here -->
+
+    {# Navbar Header (fixed) included here  #}
+
     {% include "partials/navbar.njk" %}
 
     <main class="container-fluid">
-        <!-- You write code for this content block in another file -->
+
+        {#  You write code for this content block in another file  #}
+
         {% block content %}{% endblock %}
+
     </main>
 
-    <!-- Footer included here -->
+    {# Footer included here  #}
+
     {% include "partials/footer.njk" %}
 
     <!-- FontAwesome CDN -->
@@ -42,7 +51,7 @@
 
     <!-- Owl Carousel -->
 
-    {# <script src="./js/owl.min.js"></script> #}
+    <script src="./js/owl.min.js"></script> 
 
     <!-- My JavaScript -->
     <script src="./js/app.js"></script>
