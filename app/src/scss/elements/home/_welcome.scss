@@ -42,7 +42,10 @@
             color: white;
 
             .sldr-title {
-                font-size: 9rem;
+                font-size: 5rem;
+                @media #{$laptop-plus} {
+                    font-size: 9rem;
+                }
                 font-weight: bolder;
                 font-family: $barlow-blk;
                 letter-spacing: 3px;

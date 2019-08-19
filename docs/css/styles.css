@@ -186,10 +186,16 @@ body {
 }
 
 .slide .wrapper .slide-content .sldr-title {
-  font-size: 9rem;
+  font-size: 5rem;
   font-weight: bolder;
   font-family: barlow_black, "Roboto", sans-serif;
   letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 1439px) {
+  .slide .wrapper .slide-content .sldr-title {
+    font-size: 9rem;
+  }
 }
 
 .slide .wrapper .slide-content .continue-text {
