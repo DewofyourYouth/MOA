@@ -184,7 +184,7 @@ body {
     Carousel Styles
 */
 #slide1 {
-  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(../assets/images/yoga.jpg) center bottom;
+  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(../assets/images/yoga.jpg) bottom;
   background-size: cover;
 }
 
