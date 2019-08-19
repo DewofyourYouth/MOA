@@ -1,68 +1,74 @@
-@import 'vars';
-
+@import "vars";
 
 body {
-    font-family: $roboto;
+  font-family: $roboto;
 }
 
 #intro {
-    min-height: 500px;
-    background: linear-gradient(to bottom, #050505e3 40%, #5f5f5f94),
-      url(../assets/images/dumbbells.jpg) fixed right center;
-    background-size: cover;
-    text-align: center;
-    color: white;
-  
-    h1 {
-      margin-top: 150px;
-    }
+  min-height: 500px;
+  background: linear-gradient(to bottom, #050505e3 40%, #5f5f5f94),
+    url(../assets/images/dumbbells.jpg) fixed right center;
+  background-size: cover;
+  text-align: center;
+  color: white;
 
+  h1 {
+    margin-top: 150px;
+  }
 }
 
 .button-lg {
-    padding: 10px 30px;
-    font-size: 1.5rem;
-    @media #{$laptop-plus} {
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  @media #{$laptop-plus} {
     padding: 21px 50px;
     font-size: 2rem;
-    }
-    font-weight: 600;
-    
+  }
+  font-weight: 600;
 }
 
 .lg-cta {
-    --x: 81px;
-    text-transform: uppercase;
-    border-radius: 50px;
-    border-color: transparent;
-    background-size: 200% auto;
-    background-position: 100% 50%;
-    background-image: linear-gradient(84deg, $site-red 0%,$site-yellow 50%,$site-red 100%);
-    animation: motionGradient 5s infinite linear;
-    color: #fff;
+  --x: 81px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border-color: transparent;
+  background-size: 200% auto;
+  background-position: 100% 50%;
+  background-image: linear-gradient(
+    84deg,
+    $site-red 0%,
+    $site-yellow 50%,
+    $site-red 100%
+  );
+  animation: motionGradient 5s infinite linear;
+  color: #fff;
 
-    &:hover {
-        background-position: var(--x) 50%;
-        border-color: transparent;
-        transition: none;
-        animation: none;
-    }
+  &:hover {
+    background-position: var(--x) 50%;
+    border-color: transparent;
+    transition: none;
+    animation: none;
+  }
 }
 
 .sec-title {
-    font-family: $barlow;
+  font-family: $barlow;
+  @media #{$laptop-plus} {
     font-size: 4rem;
     margin-bottom: 40px;
+  }
 }
 
 .sec-subtext {
+  font-size: 1.5rem;
+  @media #{$laptop-plus} {
     font-size: 2rem;
     margin-bottom: 80px;
-
+  }
 }
-@import 'elements/nav';
-@import 'elements/home/welcome';
-@import 'elements/home/main_services';
-@import 'elements/patients';
-@import 'elements/home/online_payments';
-@import 'elements/home/testimonials';
+@import "elements/nav";
+@import "elements/home/welcome";
+@import "elements/home/main_services";
+@import "elements/patients";
+@import "elements/home/online_payments";
+@import "elements/home/testimonials";

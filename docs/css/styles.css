@@ -59,13 +59,24 @@ body {
 
 .sec-title {
   font-family: barlow, "Roboto", sans-serif;
-  font-size: 4rem;
-  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 1439px) {
+  .sec-title {
+    font-size: 4rem;
+    margin-bottom: 40px;
+  }
 }
 
 .sec-subtext {
-  font-size: 2rem;
-  margin-bottom: 80px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1439px) {
+  .sec-subtext {
+    font-size: 2rem;
+    margin-bottom: 80px;
+  }
 }
 
 .bg-light {
