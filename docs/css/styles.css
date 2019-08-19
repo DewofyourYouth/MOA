@@ -9,6 +9,12 @@
   src: local(barlow_black), url("../assets/fonts/BarlowCondensed-Medium.ttf") format("opentype");
 }
 
+@font-face {
+  font-family: barlow-bold;
+  src: local(barlow_black), url("../assets/fonts/BarlowCondensed-Bold.ttf") format("opentype");
+  src: local(barlow_black), url("../assets/fonts/BarlowCondensed-Bold.ttf") format("opentype");
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -58,7 +64,7 @@ body {
 }
 
 .sec-title {
-  font-family: barlow, "Roboto", sans-serif;
+  font-family: barlow-bold, "Roboto", sans-serif;
   font-weight: 700;
 }
 

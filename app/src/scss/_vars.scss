@@ -21,9 +21,15 @@ $site-yellow: #ff9625;
 @font-face {
     font-family: barlow;
     src: local(barlow_black), url('../assets/fonts/BarlowCondensed-Medium.ttf') format('opentype');
+}
 
+@font-face {
+    font-family: barlow-bold;
+    src: local(barlow_black), url('../assets/fonts/BarlowCondensed-Bold.ttf') format('opentype');
+    src: local(barlow_black), url('../assets/fonts/BarlowCondensed-Bold.ttf') format('opentype');
 }
 
 $barlow-blk: barlow_black, 'Roboto', sans-serif;
 $barlow: barlow, 'Roboto', sans-serif;
+$barlow-bold: barlow-bold, 'Roboto', sans-serif;
 $roboto: 'Roboto', sans-serif;
