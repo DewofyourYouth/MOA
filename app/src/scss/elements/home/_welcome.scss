@@ -44,6 +44,7 @@
             color: white;
 
             .sldr-title {
+                margin: 0;
                 font-size: 5rem;
                 @media #{$laptop-plus} {
                     font-size: 9rem;
