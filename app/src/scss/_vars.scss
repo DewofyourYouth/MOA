@@ -3,12 +3,15 @@
 $mobile: "only screen and (max-width : 990px)";
 $lt-tab: "only screen and (max-width : 1050px)";
 $laptop: "only screen and (min-width : 1100px)";
+$laptop-md: "only screen and (min-width : 1250px)";
 $laptop-plus: "only screen and (min-width : 1439px)";
 
 //Colors
 
 $site-red: #f6435f;
 $site-yellow: #ff9625;
+$bg-gray: #373737;
+$white-50: #ffffff80;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');

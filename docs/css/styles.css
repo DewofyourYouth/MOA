@@ -407,3 +407,56 @@ body {
     padding: 20px;
   }
 }
+
+footer {
+  background-color: #373737;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 1250px) {
+  footer .container {
+    max-width: 1200px;
+  }
+}
+
+footer .footer-title {
+  color: white;
+}
+
+footer .footer-input {
+  padding: 20px;
+  border-radius: 30px;
+}
+
+footer .ftr-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-radius: 30px;
+  display: block;
+  --x: 81px;
+  border-color: transparent;
+  background-size: 200% auto;
+  background-position: 100% 50%;
+  background-image: linear-gradient(84deg, #f6435f 0%, #ff9625 50%, #f6435f 100%);
+  animation: motionGradient 5s infinite linear;
+  color: #fff;
+}
+
+footer .ftr-btn:hover {
+  background-position: var(--x) 50%;
+  border-color: transparent;
+  transition: none;
+  animation: none;
+}
+
+footer .footer-text {
+  color: #ffffff80;
+}
+
+footer hr {
+  border: solid 1px #ffffff80;
+  margin: 30px 100px 30px 0;
+}
