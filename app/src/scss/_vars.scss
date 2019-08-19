@@ -15,12 +15,12 @@ $site-yellow: #ff9625;
 
 @font-face {
     font-family: barlow_black;
-    src: local(barlow_black), url('assets/fonts/BarlowCondensed-Black.ttf') format('opentype');
+    src: local(barlow_black), url('../assets/fonts/BarlowCondensed-Black.ttf') format('opentype');
 }
 
 @font-face {
     font-family: barlow;
-    src: local(barlow_black), url('assets/fonts/BarlowCondensed-Medium.ttf') format('opentype');
+    src: local(barlow_black), url('../assets/fonts/BarlowCondensed-Medium.ttf') format('opentype');
 
 }
 
