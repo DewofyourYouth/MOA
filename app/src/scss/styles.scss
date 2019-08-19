@@ -21,6 +21,7 @@ body {
 
 .button-lg {
     padding: 10px 20px;
+    font-size: 1.3rem;
     @media #{$laptop-plus} {
     padding: 21px 50px;
     font-size: 2rem;
