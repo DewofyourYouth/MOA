@@ -15,7 +15,7 @@ body {
 
 #intro {
   min-height: 500px;
-  background: linear-gradient(to bottom, #05050562, #fffdfd41), url(/assets/images/dumbbells.jpg) fixed right center;
+  background: linear-gradient(to bottom, #05050562, #fffdfd41), url(../assets/images/dumbbells.jpg) fixed right center;
   background-size: cover;
   text-align: center;
   color: white;
@@ -145,17 +145,17 @@ body {
     Carousel Styles
 */
 #slide1 {
-  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(assets/images/yoga.jpg) center bottom;
+  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(../assets/images/yoga.jpg) center bottom;
   background-size: cover;
 }
 
 #slide2 {
-  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(assets/images/runner.jpg);
+  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(../assets/images/runner.jpg);
   background-size: cover;
 }
 
 #slide3 {
-  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(assets/images/boxing.jpg);
+  background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(../assets/images/boxing.jpg);
   background-size: cover;
 }
 
@@ -321,6 +321,6 @@ body {
   padding: 100px 80px;
   color: white;
   text-align: center;
-  background: linear-gradient(to bottom, #000000e1, #000000b7), url(assets/images/dumbbells.jpg) fixed;
+  background: linear-gradient(to bottom, #000000e1, #000000b7), url(../assets/images/dumbbells.jpg) fixed;
   background-size: cover;
 }

@@ -5,7 +5,7 @@ const njr = require('gulp-nunjucks-render');
 // const data = require('gulp-data');
 
 
-// gulp.task('deploy', () => gulp.src('./dist/**/*').pipe(ghPages()));
+// gulp.task('deploy', () => gulp.src('./docs/**/*').pipe(ghPages()));
 
  function nunjucks(){
     // where the nunjucks files to convert to html are 
@@ -20,7 +20,7 @@ const njr = require('gulp-nunjucks-render');
         path: ['app/src/templates']
     }))
     // where to send the converted njk files => html files
-    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('./docs/'))
 }
 
 function style() {
@@ -29,7 +29,7 @@ function style() {
     // 2. pass that file through sass compiler (to change to minified change outputStyle to compressed)
     .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
     // 3. where to save compiled css?
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs/css'))
     // 4. stream changes to all browsers
     .pipe(browserSync.stream());
 }
@@ -39,7 +39,7 @@ function watch() {
     browserSync.init({
         server: {
             // 2. Identify where the root directory of the server is
-            baseDir: 'dist'
+            baseDir: 'docs'
         }
     });
 
@@ -49,8 +49,8 @@ function watch() {
     gulp.watch('app/src/pages/**/*.njk', nunjucks);
     gulp.watch('app/src/templates/**/*.njk', nunjucks);
     gulp.watch('app/src/scss/**/*.scss', style);
-    gulp.watch('dist/*.html').on('change', browserSync.reload);
-    gulp.watch('dist/js/**/*.js').on('change', browserSync.reload)
+    gulp.watch('docs/*.html').on('change', browserSync.reload);
+    gulp.watch('docs/js/**/*.js').on('change', browserSync.reload)
 }
 
 // these make the functions accessable from the command line by writing gulp and then the value.

@@ -1,20 +1,18 @@
-
-
 /*
     Carousel Styles
 */
 #slide1 {
-    background: linear-gradient(to right,#0000007e 30%, #ffffff00), url(assets/images/yoga.jpg)center bottom;
+    background: linear-gradient(to right,#0000007e 30%, #ffffff00), url(../assets/images/yoga.jpg)center bottom;
     background-size: cover;
 }
 
 #slide2 {
-    background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(assets/images/runner.jpg);
+    background: linear-gradient(to right, #0000007e 30%, #ffffff00), url(../assets/images/runner.jpg);
     background-size: cover;
 }
 
 #slide3 {
-    background: linear-gradient(to right,#0000007e 30%, #ffffff00), url(assets/images/boxing.jpg);
+    background: linear-gradient(to right,#0000007e 30%, #ffffff00), url(../assets/images/boxing.jpg);
     background-size: cover;
 }
 
