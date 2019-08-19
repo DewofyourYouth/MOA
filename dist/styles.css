@@ -29,6 +29,7 @@ body {
   padding: 21px 50px;
   font-size: 18px;
   font-size: 2rem;
+  font-weight: 600;
 }
 
 .lg-cta {
@@ -110,6 +111,11 @@ body {
 }
 
 .nav-link:hover {
+  color: #f6435f !important;
+  transition-duration: 300ms;
+}
+
+.nav-active .nav-link {
   color: #f6435f !important;
   transition-duration: 300ms;
 }

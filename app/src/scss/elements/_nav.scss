@@ -1,76 +1,82 @@
 .bg-light {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .scrolled {
-    background-color: #fff !important;
+  background-color: #fff !important;
 
-    .nav-link {
-        color: black !important;
-    }
+  .nav-link {
+    color: black !important;
+  }
 
-    .navbar-brand {
-        img{
-            filter: none;
-         -webkit-filter: none;
-        }
+  .navbar-brand {
+    img {
+      filter: none;
+      -webkit-filter: none;
     }
+  }
 
-    .cta-btn {
-        border: solid 2px $site-red;
-        color: black;
-        
-        &:hover {
-            border: solid 2px $site-red;
-            color: white;
-            background-color: $site-red;
-        }
+  .cta-btn {
+    border: solid 2px $site-red;
+    color: black;
+
+    &:hover {
+      border: solid 2px $site-red;
+      color: white;
+      background-color: $site-red;
     }
+  }
 }
 
 .navbar-brand {
-    img {
-        max-width: 220px;
-        margin-left: 30px;
-        filter: invert(1);
-         -webkit-filter: invert(1);
-    }
+  img {
+    max-width: 220px;
+    margin-left: 30px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+  }
 }
 
 .nav-item {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 .nav-link {
-    color: white !important;
-    font-family: $roboto;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 600;
-    transition-duration: 300ms;
+  color: white !important;
+  font-family: $roboto;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition-duration: 300ms;
 
-    &:hover {
-        color: $site-red !important;
-        transition-duration: 300ms;
-    }
+  &:hover {
+    color: $site-red !important;
+    transition-duration: 300ms;
+  }
 }
 
+.nav-active {
+  .nav-link {
+    color: $site-red !important;
+    transition-duration: 300ms;
+  }
+}
 .nav-btn {
-    justify-content: flex-end !important;
+  justify-content: flex-end !important;
 }
 
 .cta-btn {
-    border: solid 2px white;
-    color: white;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 10px 30px;
-    transition-duration: 500ms;
+  border: solid 2px white;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  transition-duration: 500ms;
 
-    &:hover {
-        border: solid 2px white;
-        background-color: #fff;
-        color: $site-red;
-        transition-duration: 500ms;
-    }
+  &:hover {
+    border: solid 2px white;
+    background-color: #fff;
+    color: $site-red;
+    transition-duration: 500ms;
+  }
 }
