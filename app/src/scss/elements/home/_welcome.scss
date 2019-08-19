@@ -55,7 +55,10 @@
 
             .continue-text {
                 font-size: 1.7rem;
+                margin-left: 100px;
+                @media #{$laptop-plus} {
                 margin-left: 150px;
+                }
                 font-weight: 600;
                 font-family: $roboto;
                 text-transform: uppercase;

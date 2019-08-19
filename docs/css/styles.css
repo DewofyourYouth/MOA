@@ -210,11 +210,17 @@ body {
 
 .slide .wrapper .slide-content .continue-text {
   font-size: 1.7rem;
-  margin-left: 150px;
+  margin-left: 100px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   padding: 15px 0 40px 0;
+}
+
+@media only screen and (min-width: 1439px) {
+  .slide .wrapper .slide-content .continue-text {
+    margin-left: 150px;
+  }
 }
 
 #main-services {
