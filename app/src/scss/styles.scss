@@ -23,9 +23,8 @@ body {
     padding: 10px 20px;
     @media #{$laptop-plus} {
     padding: 21px 50px;
-    }
-    font-size: 18px;
     font-size: 2rem;
+    }
     font-weight: 600;
 }
 

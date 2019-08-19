@@ -27,14 +27,13 @@ body {
 
 .button-lg {
   padding: 10px 20px;
-  font-size: 18px;
-  font-size: 2rem;
   font-weight: 600;
 }
 
 @media only screen and (min-width: 1439px) {
   .button-lg {
     padding: 21px 50px;
+    font-size: 2rem;
   }
 }
 
