@@ -422,7 +422,7 @@ body {
 
 footer {
   background-color: #373737;
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -434,6 +434,7 @@ footer {
 
 footer .col-md-4 {
   padding-right: 40px;
+  padding-top: 20px;
 }
 
 footer .footer-title {
