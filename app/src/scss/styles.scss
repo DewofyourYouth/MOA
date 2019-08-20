@@ -153,6 +153,24 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   }
+
+  /* Styling for social media menus */
+
+  .social-media {
+    list-style: none;
+    padding-left: 0;
+    li{
+      display: inline-block;
+      padding-right: 25px;
+      font-size: 1.5rem;
+
+
+      &:hover {
+        color: $site-red;
+      }
+    }
+    
+  }
  
 @import "elements/nav";
 @import "elements/home/welcome";
@@ -162,5 +180,6 @@ body {
 @import "elements/home/testimonials";
 @import "elements/home/home_about";
 @import "elements/about";
+@import "elements/staff";
 
 @import "elements/footer";

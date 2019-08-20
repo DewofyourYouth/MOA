@@ -129,32 +129,32 @@ body {
 }
 
 /* styles for half text half image sections */
-#home-about, #mission {
+#home-about, #mission, .staff {
   padding: 20px 0;
 }
 
-#home-about .h-about-text, #mission .mission-text {
+#home-about .h-about-text, #mission .mission-text, #home-about .staff .staff-text, .staff #home-about .staff-text, #mission .staff .staff-text, .staff #mission .staff-text, .staff .staff-text {
   padding: 20px;
   text-align: left;
 }
 
-#home-about .h-about-text .ha-title, #mission .mission-text .m-title {
+#home-about .h-about-text .ha-title, #mission .mission-text .m-title, .staff .staff-text #home-about .h-about-text .s-name, .staff .staff-text #mission .mission-text .s-name, #home-about .staff .staff-text .s-name, .staff #home-about .staff-text .s-name, #mission .staff .staff-text .s-name, .staff #mission .staff-text .s-name, .staff .staff-text .s-name {
   font-family: barlow_black, "Roboto", sans-serif;
   font-size: 3rem;
   margin-bottom: 35px;
 }
 
-#home-about .h-about-text .ha-subtitle, #mission .mission-text .m-subtitle {
+#home-about .h-about-text .ha-subtitle, #mission .mission-text .m-subtitle, .staff .staff-text #home-about .h-about-text .s-subtitle, .staff .staff-text #mission .mission-text .s-subtitle, #home-about .staff .staff-text .s-subtitle, .staff #home-about .staff-text .s-subtitle, #mission .staff .staff-text .s-subtitle, .staff #mission .staff-text .s-subtitle, .staff .staff-text .s-subtitle {
   font-family: barlow-bold, "Roboto", sans-serif;
   margin-bottom: 30px;
 }
 
-#home-about .h-about-img, #mission .mission-img {
+#home-about .h-about-img, #mission .mission-img, #home-about .staff .staff-img, .staff #home-about .staff-img, #mission .staff .staff-img, .staff #mission .staff-img, .staff .staff-img {
   padding: 20px;
   text-align: right;
 }
 
-#home-about .h-about-img img, #mission .mission-img img {
+#home-about .h-about-img img, #mission .mission-img img, #home-about .staff .staff-img img, .staff #home-about .staff-img img, #mission .staff .staff-img img, .staff #mission .staff-img img, .staff .staff-img img {
   height: 450px;
   object-position: center;
   object-fit: cover;
@@ -178,6 +178,22 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+/* Styling for social media menus */
+.social-media, .ftr-sm {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-media li, .ftr-sm li {
+  display: inline-block;
+  padding-right: 25px;
+  font-size: 1.5rem;
+}
+
+.social-media li:hover, .ftr-sm li:hover {
+  color: #f6435f;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -655,6 +671,20 @@ blockquote span {
   transition-timing-function: ease-in-out;
 }
 
+.staff .staff-text .s-name {
+  font-family: barlow, "Roboto", sans-serif !important;
+  margin-bottom: 20px;
+}
+
+.staff .staff-text .s-title {
+  font-family: barlow, "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.staff .staff-img {
+  text-align: center;
+}
+
 footer {
   background-color: #373737;
   padding-top: 40px;
@@ -695,4 +725,12 @@ footer .footer-text {
 footer hr {
   border: solid 1px #ffffff80;
   margin: 30px 100px 30px 0;
+}
+
+.ftr-sm {
+  color: #ffffff80;
+}
+
+.ftr-sm li:hover {
+  color: #ff9625;
 }

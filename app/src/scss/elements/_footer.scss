@@ -41,3 +41,14 @@ footer {
         
     }
 }
+
+.ftr-sm {
+    @extend .social-media;
+    color: $white-50;
+
+    li {
+        &:hover {
+            color: $site-yellow;
+        }
+    }
+}
