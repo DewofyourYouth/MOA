@@ -676,6 +676,12 @@ blockquote span {
   padding-right: 100px;
 }
 
+@media only screen and (min-width: 1439px) {
+  .staff .staff-text p {
+    padding-right: 250px;
+  }
+}
+
 .staff .staff-text .s-name {
   font-family: barlow, "Roboto", sans-serif !important;
   margin-bottom: 20px;

@@ -6,6 +6,9 @@
     p {
       text-align: justify;
       padding-right: 100px;
+      @media #{$laptop-plus} {
+        padding-right: 250px;
+      }
     }
 
     .s-name {
