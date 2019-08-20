@@ -2,7 +2,18 @@
     Copyright (c) Jacob Shore
 */
 
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    margin: 10,
+    items: 1
+});
+
+
 $(document).ready(function(){
+
     const win = $( window );
     const winWidth = win.width();
 
@@ -17,6 +28,8 @@ $(document).ready(function(){
         })
     }
 
-    console.log("Hi!");
+  
 
-});
+
+});  
+

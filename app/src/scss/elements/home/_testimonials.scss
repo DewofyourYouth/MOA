@@ -1,0 +1,58 @@
+#testimonials {
+  .testimnl {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+
+    div {
+        margin: auto;
+        padding: 20px;
+        max-width: 50%;
+    }
+
+    .testimnl-quote {
+        text-align: left;
+        width: 50%;
+    }
+
+    .testiml-name {
+        display: block;
+        font-family: $barlow-bold;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .testiml-title {
+        font-family: $barlow;
+        font-size: 1.6rem;
+    }
+
+    .testiml-img {
+      img {
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+blockquote {
+    font-family: $barlow-light;
+    width: fit-content;
+    font-size: 2rem;
+    padding-top: 60px;
+    background-image: url(../assets/images/open_quote.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+     span {
+        display: block;
+        width: 100%;
+        padding-bottom: 60px;
+          background-image: url(../assets/images/close_quote.png);
+          background-repeat: no-repeat;
+          background-position: bottom right;
+        }
+  
+    }

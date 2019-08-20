@@ -24,7 +24,16 @@ Copyright (c) Jacob Shore
 @font-face {
   font-family: barlow-bold;
   src: local(barlow_black), url("../assets/fonts/BarlowCondensed-Bold.ttf") format("opentype");
-  src: local(barlow_black), url("../assets/fonts/BarlowCondensed-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: barlow-thin;
+  src: local(barlow-thin), url("../assets/fonts/BarlowCondensed-Thin.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: barlow-light;
+  src: local(barlow-Light), url("../assets/fonts/BarlowCondensed-Light.ttf") format("opentype");
 }
 
 body {
@@ -418,6 +427,61 @@ body {
   #online-payments {
     padding: 20px;
   }
+}
+
+#testimonials .testimnl {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#testimonials .testimnl div {
+  margin: auto;
+  padding: 20px;
+  max-width: 50%;
+}
+
+#testimonials .testimnl .testimnl-quote {
+  text-align: left;
+  width: 50%;
+}
+
+#testimonials .testimnl .testiml-name {
+  display: block;
+  font-family: barlow-bold, "Roboto", sans-serif;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+#testimonials .testimnl .testiml-title {
+  font-family: barlow, "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+#testimonials .testimnl .testiml-img img {
+  max-height: 100%;
+}
+
+blockquote {
+  font-family: barlow-light, "Roboto", sans-serif;
+  width: fit-content;
+  font-size: 2rem;
+  padding-top: 60px;
+  background-image: url(../assets/images/open_quote.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+blockquote span {
+  display: block;
+  width: 100%;
+  padding-bottom: 60px;
+  background-image: url(../assets/images/close_quote.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 footer {
