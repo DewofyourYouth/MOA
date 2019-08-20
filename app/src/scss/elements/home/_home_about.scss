@@ -2,6 +2,7 @@
 
 #home-about {
     @extend %half-img-text;
+    border-top: 3px solid lighten($bg-gray, 50);
 
     .h-about-text {
         @extend %half-text-sec;

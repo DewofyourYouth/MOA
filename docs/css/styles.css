@@ -539,6 +539,10 @@ blockquote span {
   background-position: bottom right;
 }
 
+#home-about {
+  border-top: 3px solid #b7b7b7;
+}
+
 #mission .mission-img {
   text-align: center;
 }
