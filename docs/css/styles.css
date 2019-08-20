@@ -107,6 +107,79 @@ body {
   }
 }
 
+.med-btn, footer .ftr-btn {
+  padding: 10px 40px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-radius: 30px;
+  --x: 81px;
+  border-color: transparent;
+  background-size: 200% auto;
+  background-position: 100% 50%;
+  background-image: linear-gradient(84deg, #f6435f 0%, #ff9625 50%, #f6435f 100%);
+  animation: motionGradient 5s infinite linear;
+  color: #fff;
+}
+
+.med-btn:hover, footer .ftr-btn:hover {
+  background-position: var(--x) 50%;
+  border-color: transparent;
+  transition: none;
+  animation: none;
+}
+
+/* styles for half text half image sections */
+#home-about, #mission {
+  padding: 20px 0;
+}
+
+#home-about .h-about-text, #mission .mission-text {
+  padding: 20px;
+  text-align: left;
+}
+
+#home-about .h-about-text .ha-title, #mission .mission-text .m-title {
+  font-family: barlow_black, "Roboto", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 35px;
+}
+
+#home-about .h-about-text .ha-subtitle, #mission .mission-text .m-subtitle {
+  font-family: barlow-bold, "Roboto", sans-serif;
+  margin-bottom: 30px;
+}
+
+#home-about .h-about-img, #mission .mission-img {
+  padding: 20px;
+  text-align: right;
+}
+
+#home-about .h-about-img img, #mission .mission-img img {
+  height: 450px;
+  object-position: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Styling for gradient text */
+.service-row .icon i, #history .history-icon:hover i {
+  padding-left: 20px;
+  font-size: 4rem;
+  background-image: -webkit-linear-gradient(right, #f6435f, #ff9625);
+  /* For Chrome and Safari */
+  background-image: -moz-linear-gradient(right, #f6435f, #ff9625);
+  /* For old Fx (3.6 to 15) */
+  background-image: -ms-linear-gradient(right, #f6435f, #ff9625);
+  /* For pre-releases of IE 10*/
+  background-image: -o-linear-gradient(right, #f6435f, #ff9625);
+  /* For old Opera (11.1 to 12.0) */
+  background-image: linear-gradient(to right, #f6435f, #ff9625);
+  /* Standard syntax; must be last */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 @media only screen and (min-width: 1100px) {
   .bg-light {
     background-color: transparent !important;
@@ -330,24 +403,6 @@ body {
   margin: auto;
 }
 
-.service-row .icon i {
-  padding-left: 20px;
-  font-size: 4rem;
-  background-image: -webkit-linear-gradient(right, #f6435f, #ff9625);
-  /* For Chrome and Safari */
-  background-image: -moz-linear-gradient(right, #f6435f, #ff9625);
-  /* For old Fx (3.6 to 15) */
-  background-image: -ms-linear-gradient(right, #f6435f, #ff9625);
-  /* For pre-releases of IE 10*/
-  background-image: -o-linear-gradient(right, #f6435f, #ff9625);
-  /* For old Opera (11.1 to 12.0) */
-  background-image: linear-gradient(to right, #f6435f, #ff9625);
-  /* Standard syntax; must be last */
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
 #patients {
   margin: 40px;
 }
@@ -484,6 +539,95 @@ blockquote span {
   background-position: bottom right;
 }
 
+#mission .mission-img {
+  text-align: center;
+}
+
+#history {
+  background-color: #373737;
+}
+
+#history .history-col {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-right: solid 1px #ffffff80;
+}
+
+#history .history-col:last-of-type {
+  border-right: none;
+}
+
+#history .history-col .h-title {
+  font-family: barlow-bold, "Roboto", sans-serif;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#history .history-col .h-text {
+  color: #ffffff80;
+}
+
+#history .history-icon {
+  color: #5c5b5b;
+  font-size: 3.5rem;
+}
+
+#history .history-icon:hover i {
+  font-size: 3.5rem;
+  padding-left: 0;
+}
+
+#abt-affilations {
+  min-height: 360px;
+  padding: 30px 0;
+}
+
+#abt-affilations .af-title {
+  font-family: barlow-bold, "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+#abt-affilations .afilliate {
+  text-align: center;
+  padding: 0 20px;
+}
+
+#abt-affilations .afil-col {
+  border: solid 1px transparent;
+  padding: 5px;
+  transition-duration: 1s;
+}
+
+#abt-affilations .afil-col:hover {
+  border: solid 1px #686666;
+  transition-duration: 1s;
+  padding-top: 10px;
+}
+
+#abt-affilations .af-logo {
+  margin: auto auto;
+  vertical-align: middle;
+  width: 100%;
+  border: solid 1px #999898;
+  filter: grayscale(100%) opacity(40%);
+  transition-duration: 1s;
+}
+
+#abt-affilations .af-logo:hover {
+  width: 95%;
+  border: solid 1px #686666;
+  filter: grayscale(100%) opacity(100%);
+  transition-duration: 1s;
+}
+
+#abt-affilations .af-logo-hover {
+  width: 95%;
+  border: solid 1px #686666;
+  filter: opacity(100%);
+  transition-duration: 1s;
+}
+
 footer {
   background-color: #373737;
   padding-top: 40px;
@@ -512,26 +656,9 @@ footer .footer-input {
 }
 
 footer .ftr-btn {
+  display: block;
   width: 100%;
   padding: 10px;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  border-radius: 30px;
-  display: block;
-  --x: 81px;
-  border-color: transparent;
-  background-size: 200% auto;
-  background-position: 100% 50%;
-  background-image: linear-gradient(84deg, #f6435f 0%, #ff9625 50%, #f6435f 100%);
-  animation: motionGradient 5s infinite linear;
-  color: #fff;
-}
-
-footer .ftr-btn:hover {
-  background-position: var(--x) 50%;
-  border-color: transparent;
-  transition: none;
-  animation: none;
 }
 
 footer .footer-text {

@@ -13,6 +13,9 @@ $('.owl-carousel').owlCarousel({
 
 
 $(document).ready(function(){
+    if (window.scrollY > 50) {
+        $('nav').addClass('scrolled');
+    }
 
     const win = $( window );
     const winWidth = win.width();

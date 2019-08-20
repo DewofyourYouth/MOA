@@ -25,31 +25,10 @@ footer {
     }
 
     .ftr-btn {
+        @extend .med-btn;
+        display: block;
         width: 100%;
         padding: 10px;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        border-radius: 30px;
-        display: block;
-        --x: 81px;
-        border-color: transparent;
-        background-size: 200% auto;
-        background-position: 100% 50%;
-        background-image: linear-gradient(
-          84deg,
-          $site-red 0%,
-          $site-yellow 50%,
-          $site-red 100%
-        );
-        animation: motionGradient 5s infinite linear;
-        color: #fff;
-      
-        &:hover {
-          background-position: var(--x) 50%;
-          border-color: transparent;
-          transition: none;
-          animation: none;
-        }
     }
 
     .footer-text {

@@ -81,7 +81,78 @@ body {
   }
 }
 
+.med-btn {
+  padding: 10px 40px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-radius: 30px;
+  --x: 81px;
+  border-color: transparent;
+  background-size: 200% auto;
+  background-position: 100% 50%;
+  background-image: linear-gradient(
+    84deg,
+    $site-red 0%,
+    $site-yellow 50%,
+    $site-red 100%
+  );
+  animation: motionGradient 5s infinite linear;
+  color: #fff;
 
+  &:hover {
+    background-position: var(--x) 50%;
+    border-color: transparent;
+    transition: none;
+    animation: none;
+  }
+}
+
+/* styles for half text half image sections */
+
+%half-img-text {
+  padding: 20px 0;
+
+  %half-text-sec {
+      padding: 20px;
+      text-align: left;
+
+      %ht-title {
+          font-family: $barlow-blk;
+          font-size: 3rem;
+          margin-bottom: 35px;
+      }
+
+      %ht-subtitle {
+          font-family: $barlow-bold;
+          margin-bottom: 30px;
+      }
+  }
+
+  %ht-img-sec {
+      padding: 20px;
+      text-align: right;
+      img {
+          height: 450px;
+          object-position: center;
+          object-fit: cover;
+          overflow: hidden;
+      }
+  }
+}
+
+/* Styling for gradient text */
+%gradient-text {
+  padding-left: 20px;
+  font-size: 4rem;
+  background-image: -webkit-linear-gradient(right, $site-red, $site-yellow); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(right, $site-red, $site-yellow); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(right, $site-red, $site-yellow); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(right, $site-red, $site-yellow); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to right, $site-red, $site-yellow); /* Standard syntax; must be last */
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  }
  
 @import "elements/nav";
 @import "elements/home/welcome";
@@ -89,5 +160,7 @@ body {
 @import "elements/patients";
 @import "elements/home/online_payments";
 @import "elements/home/testimonials";
+@import "elements/home/home_about";
+@import "elements/about";
 
 @import "elements/footer";

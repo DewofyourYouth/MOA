@@ -1,0 +1,21 @@
+
+
+#home-about {
+    @extend %half-img-text;
+
+    .h-about-text {
+        @extend %half-text-sec;
+
+        .ha-title {
+            @extend %ht-title;
+        }
+
+        .ha-subtitle {
+            @extend %ht-subtitle;
+        }
+    }
+
+    .h-about-img {
+        @extend %ht-img-sec;
+    }
+}
