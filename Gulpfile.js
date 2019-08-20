@@ -2,15 +2,15 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const njr = require('gulp-nunjucks-render');
-// const data = require('gulp-data');
+const data = require('gulp-data');
 
  function nunjucks(){
     // where the nunjucks files to convert to html are 
     return gulp.src('./app/src/pages/**/*.+(html|njk)')
     // include the data included in data.json
-    // .pipe(data(function(){
-    //     return require('./app/src/data.json')
-    // }))
+    .pipe(data(function(){
+        return require('./app/src/data.json')
+    }))
     // actually do the conversion
     .pipe(njr({
         // where the template files are located

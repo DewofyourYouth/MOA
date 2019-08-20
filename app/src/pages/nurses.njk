@@ -1,7 +1,8 @@
 {% set page_name = 'Nurses' %}
 {% extends 'page-layout.njk' %}
-{% block pageContent %}
-    <section id="nurses">
+{% block pageContent %} 
+<section id="nurses">
+{% for nurse in nurses %}
       <div class="staff row">
             <div class="col-md-6">
                 <div class="staff-img">
@@ -10,8 +11,8 @@
             </div>
             <div class="col-md-6">
                 <div class="staff-text">
-                    <h2 class="s-name">Ann Mary</h2>
-                    <p class="s-title">Reflexologist</p>
+                    <h2 class="s-name">{{nurse.name}}</h2>
+                    <p class="s-title">{{nurse.title}}</p>
                     {% include "partials/social-media-menu.njk" %}
                     <p class="s-text">
                         Qui minim duis aute in amet eu dolore laborum. Et esse amet officia cillum. Commodo magna culpa tempor consectetur enim mollit nisi sint. Labore ipsum consectetur et ipsum velit commodo voluptate cupidatat fugiat ipsum irure sint duis. Est anim excepteur ea commodo exercitation et culpa voluptate. Lorem sit ad irure pariatur est elit voluptate est.
@@ -19,22 +20,6 @@
                 </div>
             </div>
         </div>
-        <div class="staff row">
-            <div class="col-md-6">
-                <div class="staff-img">
-                    <img src='https://placehold.it/500x500?text=Headshot%20Here' alt=''/>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="staff-text">
-                    <h2 class="s-name">Ann Mary</h2>
-                    <p class="s-title">Reflexologist</p>
-                     {% include "partials/social-media-menu.njk" %}
-                    <p class="s-text">
-                        Qui minim duis aute in amet eu dolore laborum. Et esse amet officia cillum. Commodo magna culpa tempor consectetur enim mollit nisi sint. Labore ipsum consectetur et ipsum velit commodo voluptate cupidatat fugiat ipsum irure sint duis. Est anim excepteur ea commodo exercitation et culpa voluptate. Lorem sit ad irure pariatur est elit voluptate est.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+{% endfor %} 
+</section>
 {% endblock pageContent %}

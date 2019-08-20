@@ -1,0 +1,26 @@
+{
+  "doctors": [
+    {
+      "name": "Mark Bettag",
+      "title": "Doctor of Medicine",
+      "photo": "https://placehold.it/500x500?text=Headshot%20Here"
+    },
+    {
+      "name": "Marshall Matthews",
+      "title": "Doctor of Medicine",
+      "photo": "https://placehold.it/500x500?text=Headshot%20Here"
+    }
+  ],
+  "nurses": [
+    {
+      "name": "Jeniffer Giebel",
+      "title": "Nurse",
+      "photo": "https://placehold.it/500x500?text=Headshot%20Here"
+    },
+    {
+      "name": "Kristin Lohr",
+      "title": "Nurse",
+      "photo": "https://placehold.it/500x500?text=Headshot%20Here"
+    }
+  ]
+}
