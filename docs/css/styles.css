@@ -671,6 +671,11 @@ blockquote span {
   transition-timing-function: ease-in-out;
 }
 
+.staff .staff-text p {
+  text-align: justify;
+  padding-right: 100px;
+}
+
 .staff .staff-text .s-name {
   font-family: barlow, "Roboto", sans-serif !important;
   margin-bottom: 20px;

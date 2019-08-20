@@ -1,27 +1,30 @@
 .staff {
-    @extend %half-img-text;
-  
-    .staff-text {
-      @extend %half-text-sec;
-  
-      .s-name {
-        @extend %ht-title;
-        font-family: $barlow !important;
-        margin-bottom: 20px;
-      }
-      .s-title {
-          font-family: $barlow;
-            text-transform: uppercase;
-      }
-  
-      .s-subtitle {
-        @extend %ht-subtitle;
-      }
+  @extend %half-img-text;
+
+  .staff-text {
+    @extend %half-text-sec;
+    p {
+      text-align: justify;
+      padding-right: 100px;
     }
-  
-    .staff-img {
-      @extend %ht-img-sec;
-      text-align: right;
+
+    .s-name {
+      @extend %ht-title;
+      font-family: $barlow !important;
+      margin-bottom: 20px;
+    }
+    .s-title {
+      font-family: $barlow;
+      text-transform: uppercase;
+    }
+
+    .s-subtitle {
+      @extend %ht-subtitle;
     }
   }
-  
+
+  .staff-img {
+    @extend %ht-img-sec;
+    text-align: right;
+  }
+}
