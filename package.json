@@ -1,7 +1,7 @@
 {
   "name": "gulp-time",
   "version": "1.0.0",
-  "description": "Starter for new gulp SCSS with Nunjucks template and Browser projects",
+  "description": "Starter for new gulp, SCSS  projects with Nunjucks template and Browsersync",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
