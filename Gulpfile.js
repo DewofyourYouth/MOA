@@ -4,9 +4,6 @@ const browserSync = require('browser-sync').create();
 const njr = require('gulp-nunjucks-render');
 // const data = require('gulp-data');
 
-
-// gulp.task('deploy', () => gulp.src('./docs/**/*').pipe(ghPages()));
-
  function nunjucks(){
     // where the nunjucks files to convert to html are 
     return gulp.src('./app/src/pages/**/*.+(html|njk)')
