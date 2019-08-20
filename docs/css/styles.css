@@ -684,6 +684,7 @@ blockquote span {
 .staff .staff-text .s-title {
   font-family: barlow, "Roboto", sans-serif;
   text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 .staff .staff-img {
