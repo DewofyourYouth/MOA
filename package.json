@@ -1,7 +1,7 @@
 {
   "name": "gulp-time",
   "version": "1.0.0",
-  "description": "Starter from new gulp SCSS projects",
+  "description": "Starter for new gulp SCSS with Nunjucks template and Browser projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +11,10 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-data": "^1.3.1",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-sass": "^4.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-data": "^1.3.1"
+  }
 }
