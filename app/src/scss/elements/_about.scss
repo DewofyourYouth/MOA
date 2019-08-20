@@ -32,7 +32,8 @@
     }
 
     .h-title {
-        font-family: $barlow-bold;
+        font-family: $barlow-light;
+        font-size: 2.4rem;
         color: white;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -43,10 +44,11 @@
     }
   }
 
+
   .history-icon {
     color: $gray-icon;
     font-size: 3.5rem;
-
+    
     &:hover {
       i {
         @extend %gradient-text;
@@ -55,6 +57,25 @@
       }
     }
   }
+
+  
+}
+
+.history-hover {
+    background-color: lighten($bg-gray, 10);
+    .history-icon {
+        color: $gray-icon;
+        font-size: 3.5rem;
+        
+       
+          i {
+            @extend %gradient-text;
+            font-size: 3.5rem;
+            padding-left: 0;
+          }
+        
+      }
+    
 }
 
 #abt-affilations {
@@ -74,10 +95,14 @@
     .afil-col {
         border: solid 1px transparent;
         padding: 5px;
-        transition-duration: 1s;
+        transition-duration: 300ms;
+        -moz-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
         &:hover{
             border: solid 1px #686666;
-            transition-duration: 1s;
+            transition-duration: 300ms;
+            -moz-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
             padding-top: 10px;
         }
 
@@ -90,12 +115,14 @@
         width: 100%;
         border: solid 1px #999898;
         filter: grayscale(100%) opacity(40%);
-        transition-duration: 1s;
+        transition-duration: 300ms;
         &:hover {
             width: 95%;
             border: solid 1px #686666;
             filter: grayscale(100%) opacity(100%);
-            transition-duration: 1s;
+            transition-duration: 300ms;
+            -moz-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
         }
     }
 
@@ -103,7 +130,8 @@
         width: 95%;
         border: solid 1px #686666;
         filter: opacity(100%);
-        transition-duration: 1s;
-    }
+        transition-duration: 300ms;
+        -moz-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;    }
 }
 

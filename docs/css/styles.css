@@ -162,7 +162,7 @@ body {
 }
 
 /* Styling for gradient text */
-.service-row .icon i, #history .history-icon:hover i {
+.service-row .icon i, #history .history-icon:hover i, .history-hover .history-icon i {
   padding-left: 20px;
   font-size: 4rem;
   background-image: -webkit-linear-gradient(right, #f6435f, #ff9625);
@@ -558,7 +558,8 @@ blockquote span {
 }
 
 #history .history-col .h-title {
-  font-family: barlow-bold, "Roboto", sans-serif;
+  font-family: barlow-light, "Roboto", sans-serif;
+  font-size: 2.4rem;
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -574,6 +575,20 @@ blockquote span {
 }
 
 #history .history-icon:hover i {
+  font-size: 3.5rem;
+  padding-left: 0;
+}
+
+.history-hover {
+  background-color: #515151;
+}
+
+.history-hover .history-icon {
+  color: #5c5b5b;
+  font-size: 3.5rem;
+}
+
+.history-hover .history-icon i {
   font-size: 3.5rem;
   padding-left: 0;
 }
@@ -596,12 +611,16 @@ blockquote span {
 #abt-affilations .afil-col {
   border: solid 1px transparent;
   padding: 5px;
-  transition-duration: 1s;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 #abt-affilations .afil-col:hover {
   border: solid 1px #686666;
-  transition-duration: 1s;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   padding-top: 10px;
 }
 
@@ -611,21 +630,25 @@ blockquote span {
   width: 100%;
   border: solid 1px #999898;
   filter: grayscale(100%) opacity(40%);
-  transition-duration: 1s;
+  transition-duration: 300ms;
 }
 
 #abt-affilations .af-logo:hover {
   width: 95%;
   border: solid 1px #686666;
   filter: grayscale(100%) opacity(100%);
-  transition-duration: 1s;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 #abt-affilations .af-logo-hover {
   width: 95%;
   border: solid 1px #686666;
   filter: opacity(100%);
-  transition-duration: 1s;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 footer {

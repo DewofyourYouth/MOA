@@ -20,6 +20,12 @@ $(document).ready(function(){
     const win = $( window );
     const winWidth = win.width();
 
+    $('.history-col').hover(function(){
+        $(this).addClass('history-hover');
+    }, function(){
+        $(this).removeClass('history-hover');
+    })
+
     if (winWidth > 1000) {
         win.scroll(function(){
             if(window.scrollY > 50){
