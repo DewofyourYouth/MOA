@@ -1,24 +1,30 @@
 <ul class="social-media">
     <li>
-        <a href="#">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-
-    </li>
-    <li>
-        <a href="#">
-            <i class="fab fa-twitter"></i>
-        </a>
-
-    </li>
-    <li>
-        <a href="#">
-            <i class="fab fa-google-plus-g"></i>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <i class="fab fa-pinterest-p"></i>
-        </a>
-    </li>
-</ul>
+        {% if page_name == "Nurses" %}
+            <a href="{{nurse.facebook}}">
+            {% else %}
+                <a href="{{doctor.facebook}}">
+                {% endif %}
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li>
+            {% if page_name == "Nurses" %}
+                <a href="{{nurse.twitter}}">
+                {% else %}
+                    <a href="{{doctor.twitter}}">
+                    {% endif %}
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+            </li>
+        </ul>

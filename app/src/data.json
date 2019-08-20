@@ -3,24 +3,32 @@
     {
       "name": "Mark Bettag",
       "title": "Doctor of Medicine",
-      "photo": "https://placehold.it/500x500?text=Headshot%20Here"
+      "photo": "https://placehold.it/500x500?text=Mark%20Headshot%20Here",
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com"
     },
     {
       "name": "Marshall Matthews",
       "title": "Doctor of Medicine",
-      "photo": "https://placehold.it/500x500?text=Headshot%20Here"
+      "photo": "https://placehold.it/500x500?text=Marshall%20Headshot%20Here",
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com"
     }
   ],
   "nurses": [
     {
       "name": "Jeniffer Giebel",
       "title": "Nurse",
-      "photo": "https://placehold.it/500x500?text=Headshot%20Here"
+      "photo": "https://placehold.it/500x500?text=Jeniffer%20Headshot%20Here",
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com"
     },
     {
       "name": "Kristin Lohr",
       "title": "Nurse",
-      "photo": "https://placehold.it/500x500?text=Headshot%20Here"
+      "photo": "https://placehold.it/500x500?text=Kristin%20Headshot%20Here",
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com"
     }
   ]
 }
