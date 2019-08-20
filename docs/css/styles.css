@@ -192,7 +192,7 @@ body {
   font-size: 1.5rem;
 }
 
-.social-media li:hover, .ftr-sm li:hover {
+.social-media li a:hover, .ftr-sm li a:hover {
   color: #f6435f;
 }
 
@@ -727,10 +727,10 @@ footer hr {
   margin: 30px 100px 30px 0;
 }
 
-.ftr-sm {
+.ftr-sm li a {
   color: #ffffff80;
 }
 
-.ftr-sm li:hover {
+.ftr-sm li a:hover {
   color: #ff9625;
 }

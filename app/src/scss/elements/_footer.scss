@@ -44,9 +44,10 @@ footer {
 
 .ftr-sm {
     @extend .social-media;
-    color: $white-50;
+    
 
-    li {
+    li a {
+        color: $white-50;
         &:hover {
             color: $site-yellow;
         }
