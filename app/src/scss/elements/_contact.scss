@@ -11,10 +11,12 @@
 
     a {
         color: #171717;
+        transition-duration: 500ms;
 
         &:hover {
             text-decoration: none;
             color: $site-red; 
+            transition-duration: 500ms;
         }
     }
 
