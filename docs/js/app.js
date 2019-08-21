@@ -1,7 +1,6 @@
 /*
     Copyright (c) Jacob Shore
 */
-
 $('.owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
@@ -10,7 +9,6 @@ $('.owl-carousel').owlCarousel({
     margin: 10,
     items: 1
 });
-
 
 $(document).ready(function(){
     if (window.scrollY > 50) {
@@ -26,6 +24,13 @@ $(document).ready(function(){
         $(this).removeClass('history-hover');
     })
 
+
+    $('.accordion-item').click(function(){
+        $(this).toggleClass('answer-show')
+        $(this).children('.answer-text').toggle('slow');
+        
+    })
+
     if (winWidth > 1000) {
         win.scroll(function(){
             if(window.scrollY > 50){
@@ -36,9 +41,6 @@ $(document).ready(function(){
 
         })
     }
-
-  
-
 
 });  
 

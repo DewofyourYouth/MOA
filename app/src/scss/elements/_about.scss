@@ -41,6 +41,9 @@
 
     .h-text {
         color: $white-50;
+        @media #{$laptop-plus} {
+          padding: 50px 100px;
+        }
     }
   }
 

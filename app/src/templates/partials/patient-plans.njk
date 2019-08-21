@@ -1,0 +1,25 @@
+<div class="col-md-4">
+    <div class="text">
+        <div class="title-sec">
+            <h4>{{plan.name}}</h4>
+
+            <p class="plan-desc">{{plan.description}}</p>
+        </div>
+        <div class="features-sec">
+            <ul class="feats">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+            </ul>
+        </div>
+        {% if plan.recommend %}
+        <div class="feat-btn-recommend">
+        {% else %}
+        <div class="feat-btn">
+        {% endif %}
+            <a href="#" class="btn btn-outline-secondary btn-patient text-center">Get Started</a>
+        </div>
+
+    </div>
+</div>

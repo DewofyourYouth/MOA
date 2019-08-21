@@ -30,5 +30,40 @@
       "facebook": "https://facebook.com",
       "twitter": "https://twitter.com"
     }
+  ],
+  "plans": [
+    {
+      "name": "Basic",
+      "description": "for beginners",
+      "recommend": false
+    },
+    {
+      "name": "Standard",
+      "description": "for regular clients",
+      "recommend": true
+    },
+    {
+      "name": "Premium",
+      "description": "for advanced level",
+      "recommend": false
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sit esse ad veniam nostrud anim deserunt dolor?",
+      "answer": "Fugiat enim excepteur fugiat eu veniam."
+    },
+    {
+      "question": "Incididunt aliqua cupidatat pariatur qui mollit tempor laboris aliquip?",
+      "answer": "Veniam proident enim ipsum anim sint non ipsum ullamco cillum adipisicing aliquip voluptate est. Adipisicing laborum dolor ullamco Lorem commodo magna dolor ex excepteur enim. Duis est quis proident nulla consectetur reprehenderit velit ad. Voluptate minim aute in ad excepteur aliquip. Ipsum commodo eu sint nulla commodo consectetur magna non. Laborum Lorem laborum excepteur amet deserunt. Qui aliqua anim voluptate eu ad laboris."
+    },
+    {
+      "question": "Culpa aliqua ex Lorem sunt est adipisicing?",
+      "answer": "Proident sint enim proident velit tempor do enim labore enim."
+    },
+    {
+      "question": "Et aliquip commodo nostrud aliqua ullamco esse est aliqua proident ut laboris ullamco ipsum magna?",
+      "answer": "Magna dolore proident dolor fugiat nisi."
+    }
   ]
 }

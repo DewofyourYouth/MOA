@@ -1,70 +1,96 @@
 #patients {
-    margin: 40px;
-    // @media #{$laptop-plus} {
-    //   margin: 40px 250px;
-    // }
-  
-    .text {
-      box-shadow: 0px 0px 3px 1px #ccc;
-      border-radius: 10px 10px 0 0 !important;
-      margin-bottom: 0 !important;
-      padding-top: 80px;
-      padding-bottom: 10px !important;
+  margin: 0 40px;
+  margin-bottom: 40px;
+  .text {
+    box-shadow: 0px 0px 3px 2px #ccc;
+    margin: 0 !important;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-sec {
+    padding: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+
+    h4 {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.2;
     }
-    .title-sec {
-      text-transform: uppercase;
-      text-align: center;
-  
-      h4 {
-        font-weight: bold;
-      }
-  
-      h6 {
-        font-weight: 600;
-      }
-  
-      p {
-        font-size: 0.9rem;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-      }
-    }
-  
-    hr {
-      margin: 20px 30px;
-    }
-  
-    .features-sec {
-      ul {
-        text-align: left;
-        padding: 20px 40px;
-        margin-bottom: 30px;
-      }
-  
-      li:before {
-        font-family: "FontAwesome";
-        content: "\f00c";
-        margin: 0 5px 15px 15px;
-        padding-right: 10px;
-      }
-  
-      li {
-        list-style: none;
-        letter-spacing: 1.5px;
-        font-weight: 600;
-      }
-    }
-  
-    .btn-sec {
-      margin-top: 0px !important;
-      a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: block;
-        text-align: center;
-        border-radius: 0 0 10px 10px !important;
-        text-transform: uppercase;
-      }
+
+    .plan-desc {
+      color: $site-yellow;
+      font-style: 14px;
+      margin-top: 4px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: .075em;
     }
   }
-  
+
+  .features-sec {
+    padding: 40px 20px;
+
+    ul {
+      text-align: center;
+      line-height: 2;
+      padding: 20px 40px;
+      margin-bottom: 30px;
+    }
+
+    li {
+      list-style: none;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 2;
+      letter-spacing: .025em;
+    }
+  }
+}
+
+.feat-btn {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: $roboto;
+
+  a {
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: solid 2px $bg-gray;
+    color: $bg-gray;
+    font-weight: 600;
+    padding: 10px 25px;
+    box-shadow: 0px 5px 4px 1px #c2c2c2;
+  }
+}
+
+.feat-btn-recommend {
+  @extend .feat-btn;
+
+  a {
+    border-radius: 30px;
+    --x: 81px;
+    border-color: transparent;
+    background-size: 200% auto;
+    background-position: 100% 50%;
+    background-image: linear-gradient(84deg,
+        $site-red 0%,
+        $site-yellow 50%,
+        $site-red 100%);
+    animation: motionGradient 5s infinite linear;
+    color: #fff;
+
+    &:hover {
+      background-position: var(--x) 50%;
+      border-color: transparent;
+      transition: none;
+      animation: none;
+    }
+  }
+}
+
+@import "accordion";

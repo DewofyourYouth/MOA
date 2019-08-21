@@ -10,7 +10,7 @@ Copyright (c) Jacob Shore
 #  ####  ####  ##   ##        ########################
 #####################################################       muchos gracias ;-)
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 @font-face {
   font-family: barlow_black;
   src: local(barlow_black), url("../assets/fonts/BarlowCondensed-Black.ttf") format("opentype");
@@ -204,6 +204,7 @@ body {
 
 .scrolled {
   background-color: #fff !important;
+  border-bottom: .5px solid #dddddd;
 }
 
 .scrolled .nav-link {
@@ -420,70 +421,149 @@ body {
 }
 
 #patients {
-  margin: 40px;
+  margin: 0 40px;
+  margin-bottom: 40px;
 }
 
 #patients .text {
-  box-shadow: 0px 0px 3px 1px #ccc;
-  border-radius: 10px 10px 0 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 80px;
-  padding-bottom: 10px !important;
+  box-shadow: 0px 0px 3px 2px #ccc;
+  margin: 0 !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #patients .title-sec {
+  padding: 40px;
   text-transform: uppercase;
   text-align: center;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
 }
 
 #patients .title-sec h4 {
+  font-size: 24px;
   font-weight: bold;
+  line-height: 1.2;
 }
 
-#patients .title-sec h6 {
-  font-weight: 600;
-}
-
-#patients .title-sec p {
+#patients .title-sec .plan-desc {
+  color: #ff9625;
+  font-style: 14px;
+  margin-top: 4px;
   font-size: 0.9rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: .075em;
 }
 
-#patients hr {
-  margin: 20px 30px;
+#patients .features-sec {
+  padding: 40px 20px;
 }
 
 #patients .features-sec ul {
-  text-align: left;
+  text-align: center;
+  line-height: 2;
   padding: 20px 40px;
   margin-bottom: 30px;
 }
 
-#patients .features-sec li:before {
-  font-family: "FontAwesome";
-  content: "\f00c";
-  margin: 0 5px 15px 15px;
-  padding-right: 10px;
-}
-
 #patients .features-sec li {
   list-style: none;
-  letter-spacing: 1.5px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: .025em;
 }
 
-#patients .btn-sec {
-  margin-top: 0px !important;
-}
-
-#patients .btn-sec a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: block;
+.feat-btn, .feat-btn-recommend {
   text-align: center;
-  border-radius: 0 0 10px 10px !important;
+  padding-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.feat-btn a, .feat-btn-recommend a {
   text-transform: uppercase;
+  border-radius: 50px;
+  border: solid 2px #373737;
+  color: #373737;
+  font-weight: 600;
+  padding: 10px 25px;
+  box-shadow: 0px 5px 4px 1px #c2c2c2;
+}
+
+.feat-btn-recommend a {
+  border-radius: 30px;
+  --x: 81px;
+  border-color: transparent;
+  background-size: 200% auto;
+  background-position: 100% 50%;
+  background-image: linear-gradient(84deg, #f6435f 0%, #ff9625 50%, #f6435f 100%);
+  animation: motionGradient 5s infinite linear;
+  color: #fff;
+}
+
+.feat-btn-recommend a:hover {
+  background-position: var(--x) 50%;
+  border-color: transparent;
+  transition: none;
+  animation: none;
+}
+
+.accordion-item {
+  margin: 20px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+
+.question-text {
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+}
+
+.question-text:hover {
+  color: #f6435f;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+}
+
+.question-text p {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  width: 90%;
+}
+
+.question-text:after {
+  content: "+";
+  font-size: 3rem;
+  text-align: center;
+}
+
+.answer-show .question-text {
+  border-bottom: 1px solid #CCC;
+}
+
+.answer-show .question-text:after {
+  content: "-";
+  font-size: 3rem;
+}
+
+.answer-text {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.answer-text p {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 #online-payments {
@@ -587,6 +667,12 @@ blockquote span {
 
 #history .history-col .h-text {
   color: #ffffff80;
+}
+
+@media only screen and (min-width: 1439px) {
+  #history .history-col .h-text {
+    padding: 50px 100px;
+  }
 }
 
 #history .history-icon {
