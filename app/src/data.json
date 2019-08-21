@@ -65,5 +65,37 @@
       "question": "Et aliquip commodo nostrud aliqua ullamco esse est aliqua proident ut laboris ullamco ipsum magna?",
       "answer": "Magna dolore proident dolor fugiat nisi."
     }
+  ],
+  "events": [
+    {
+      "name": "Cancer Support Group",
+      "description": "Est id tempor ad cupidatat ea exercitation ipsum.",
+      "photo": "https://placehold.it/400x300?text=Cancer%20Support"
+    },
+    {
+      "name": "Survivorship Session",
+      "description": "Reprehenderit ex pariatur excepteur qui veniam est labore cupidatat eiusmod irure.",
+      "photo": "https://placehold.it/400x300?text=Survivorship%20Sessions"
+    },
+    {
+      "name": "Upcoming Event",
+      "description": "Est aute labore nostrud laborum enim quis pariatur.",
+      "photo": "https://placehold.it/300x200?text=Upcoming%20Event"
+    },
+    {
+      "name": "Upcoming Event",
+      "description": "Est aute labore nostrud laborum enim quis pariatur.",
+      "photo": "https://placehold.it/300x200?text=Upcoming%20Event"
+    },
+    {
+      "name": "Upcoming Event",
+      "description": "Est aute labore nostrud laborum enim quis pariatur.",
+      "photo": "https://placehold.it/300x200?text=Upcoming%20Event"
+    },
+    {
+      "name": "Upcoming Event",
+      "description": "Est aute labore nostrud laborum enim quis pariatur.",
+      "photo": "https://placehold.it/300x200?text=Upcoming%20Event"
+    }
   ]
 }

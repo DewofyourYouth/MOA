@@ -3,8 +3,13 @@
 {% block pageContent %}
     <section id="events">
         <div class="row">
-            <div class="col-md-6">
-            </div>
+            
+                {% for event in events %}
+                <div class="col-md-6">
+                {% include "partials/event-card.njk" %} 
+                </div>
+                {% endfor %}
+           
         </div> 
     </section>
 {% endblock pageContent %}

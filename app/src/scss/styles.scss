@@ -17,6 +17,7 @@ body {
   font-family: $roboto;
 }
 
+
 #intro {
   min-height: 500px;
   background: linear-gradient(to bottom, #050505e3 40%, #5f5f5f94),
@@ -165,15 +166,32 @@ body {
       font-size: 1.5rem;
 
       a{
+        .fa-facebook-f {
+         @include sm-color($facebook);
+        }
+
+        .fa-twitter {
+          @include sm-color($twitter);
+        }
+
+        .fa-pinterest-p {
+          @include sm-color($pinterest);
+        }
+
+        .fa-google-plus-g {
+          @include sm-color($googleplus);
+        }
 
         &:hover {
-        color: $site-red;
+        color: $site-red !important;
       }
       
       }
     }
     
   }
+
+  
  
 @import "elements/nav";
 @import "elements/home/welcome";
@@ -185,3 +203,4 @@ body {
 @import "elements/about";
 @import "elements/staff";
 @import "elements/footer";
+@import "elements/contact";

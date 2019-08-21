@@ -2,6 +2,38 @@
 {% extends 'page-layout.njk' %}
 {% block pageContent %}
     <section id="contact">
-      
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="display-3 p-4">
+                    Contact Info
+                </h2>
+                <div class="p-4">
+                    <p>
+                        Nulla enim do nostrud proident nisi est id ea in.
+                    </p>
+                    <ul id="contact-info">
+                        <li id="telephone">
+                            <a href="#">+ 1 800 123 4567</a>
+                        </li>
+                        <li id="address">
+                            <a href="#">123 Any Street, East Leftovershoe, MI, USA</a>
+                        </li>
+                        <li id="email">
+                            <a href="#">info@moa.com</a>
+                        </li>
+                    </ul>
+
+                    {% include "partials/social-media-menu.njk" %}
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img style="max-width: 100%" src='https://placehold.it/600x600?text=Image%20Here' alt=''/>
+            </div>
+        </div>
+    </section>
+    <section id="map" class="row">
+        <div class="col-12">
+            <img width="100%" src='http://loremflickr.com/1200/600/map' alt=''/>
+        </div>
     </section>
 {% endblock pageContent %}
