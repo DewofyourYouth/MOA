@@ -41,6 +41,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 #intro {
   height: 400px;
   background: linear-gradient(to bottom, #050505e3 40%, #5f5f5f94), url(../assets/images/dumbbells.jpg) fixed right center;
