@@ -2,6 +2,9 @@
   .testimnl {
     display: flex;
     flex-direction: row;
+    @media #{$mobile} {
+      flex-flow: column;
+    }
     justify-items: center;
     justify-content: center;
     width: 100%;

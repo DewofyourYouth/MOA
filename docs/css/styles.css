@@ -625,6 +625,12 @@ img {
   width: 100%;
 }
 
+@media only screen and (max-width: 990px) {
+  #testimonials .testimnl {
+    flex-flow: column;
+  }
+}
+
 #testimonials .testimnl div {
   margin: auto;
   padding: 20px;
