@@ -1,22 +1,22 @@
 
 
-#home-about {
+#home-about, #bills {
     @extend %half-img-text;
     border-top: 3px solid lighten($bg-gray, 50);
 
-    .h-about-text {
+    .h-about-text, .bills-text {
         @extend %half-text-sec;
 
-        .ha-title {
+        .ha-title, .bills-title {
             @extend %ht-title;
         }
 
-        .ha-subtitle {
+        .ha-subtitle, .bills-subtitle {
             @extend %ht-subtitle;
         }
     }
 
-    .h-about-img {
+    .h-about-img, .bills-img {
         @extend %ht-img-sec;
     }
 }

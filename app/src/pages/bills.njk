@@ -1,7 +1,32 @@
 {% set page_name = 'Bills' %}
 {% extends 'page-layout.njk' %}
 {% block pageContent %}
-    <section id="bills">
-      
-    </section>
+
+<section id="bills" class="row" style="border-bottom: solid 1px #ccc;">
+<div class="col-md-6">
+    <div class="bills-img">
+        <img src='https://placehold.it/500x500?text=Image%20Here' alt=''/>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="bills-text">
+        <h2 class="bills-title">Bills</h2>
+        <h3 class="bills-subtitle">Labore dolor aliqua eiusmod pariatur sint aute ut non ad pariatur.</h3>
+        <p class="bills-text">
+            Qui minim duis aute in amet eu dolore laborum. Et esse amet officia cillum. Commodo magna culpa tempor consectetur enim mollit nisi sint. Labore ipsum consectetur et ipsum velit commodo voluptate cupidatat fugiat ipsum irure sint duis. Est anim excepteur ea commodo exercitation et culpa voluptate. Lorem sit ad irure pariatur est elit voluptate est.
+        </p>
+        <p class="pt-5">
+            <a href="about.html" class="btn btn-primary med-btn">Make Payment</a>
+        </p>
+    </div>
+</div>
+</section>
+<section id="faqs-sec" class="row">
+    <div class="col-12 faqs">
+        {% for q in faq %}
+        {% include "partials/accordion.njk" %}
+        {% endfor %}
+    </div>
+</section>
+
 {% endblock pageContent %}
