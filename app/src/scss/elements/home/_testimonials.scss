@@ -1,23 +1,33 @@
-#testimonials {
-  .testimnl {
-    display: flex;
-    flex-direction: row;
-    @media #{$mobile} {
-      flex-flow: column;
-    }
-    justify-items: center;
-    justify-content: center;
-    width: 100%;
+#testimonials {  
+  padding-top: 70px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  .owl-dots {
+    margin-top: 30px !important;
+  }
+ 
+  img {
+    height: 500px;
+    width: auto; 
+    display: inline-block;
+    margin-right: 20px;
+   
+  }
+  @media #{$laptop} {
+    height: 700px;
+  }
+  @media #{$mobile} {
+    padding-top: 30px;
+     padding-bottom: 10px;
 
-    div {
-        margin: auto;
-        padding: 20px;
-        max-width: 50%;
+    img {
+       max-height: 0px;
+     }
     }
+  }
 
     .testimnl-quote {
-        text-align: left;
-        width: 50%;
+      text-align: left;
     }
 
     .testiml-name {
@@ -26,6 +36,9 @@
         margin-bottom: 30px;
         font-size: 2.5rem;
         font-weight: 500;
+        @media #{$mobile} {
+          font-size: 2rem;
+        }
     }
 
     .testiml-title {
@@ -33,29 +46,28 @@
         font-size: 1.6rem;
     }
 
-    .testiml-img {
-      img {
-        max-height: 100%;
-      }
-    }
-  }
-}
+
+
 
 blockquote {
     font-family: $barlow-light;
     width: fit-content;
-    font-size: 2rem;
-    padding-top: 60px;
+    font-size: 3rem;
+    padding-top: 70px;
     background-image: url(../assets/images/open_quote.png);
     background-position: top left;
     background-repeat: no-repeat;
      span {
         display: block;
         width: 100%;
-        padding-bottom: 60px;
+        padding-bottom: 70px;
           background-image: url(../assets/images/close_quote.png);
           background-repeat: no-repeat;
           background-position: bottom right;
+        }
+
+        @media #{$mobile} {
+          font-size: 2.5rem;
         }
   
     }
