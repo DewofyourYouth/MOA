@@ -700,11 +700,10 @@ blockquote span {
 }
 
 #home-about, #bills {
-  border-top: 3px solid #b7b7b7;
+  background-color: #f2f2f2;
 }
 
 #physician-spotlight {
-  border-top: 3px solid #b7b7b7;
   padding: 50;
 }
 
