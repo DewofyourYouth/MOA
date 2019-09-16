@@ -714,6 +714,21 @@ blockquote span {
   }
 }
 
+#physician-spotlight .card-title {
+  font-family: barlow-bold, "Roboto", sans-serif !important;
+  font-size: 1.5rem;
+}
+
+#physician-spotlight .card-text {
+  font-family: barlow-light, "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+#physician-spotlight .btn-primary {
+  font-family: barlow, "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
 #mission .mission-img {
   text-align: center;
 }

@@ -4,5 +4,19 @@
     @media #{$laptop} {
         padding: 50px 20%;
     }
+
+    .card-title {
+        font-family: $barlow-bold !important;
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-family: $barlow-light;
+        font-size: 1.3rem;
+    }
     
+    .btn-primary {
+        font-family: $barlow;
+        text-transform: uppercase;
+    }
 }
