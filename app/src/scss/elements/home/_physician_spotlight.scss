@@ -4,6 +4,9 @@
     @media #{$laptop} {
         padding: 50px 20%;
     }
+    @media #{$laptop-plus} {
+        padding: 50px 25%;   
+    }
 
     .card-title {
         font-family: $barlow-bold !important;

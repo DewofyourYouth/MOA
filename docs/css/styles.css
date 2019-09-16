@@ -714,6 +714,12 @@ blockquote span {
   }
 }
 
+@media only screen and (min-width: 1439px) {
+  #physician-spotlight {
+    padding: 50px 25%;
+  }
+}
+
 #physician-spotlight .card-title {
   font-family: barlow-bold, "Roboto", sans-serif !important;
   font-size: 1.5rem;
